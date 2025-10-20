@@ -1,0 +1,13 @@
+{
+  "name": "calculator-extension",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "node scripts/build-extensions.mjs",
+    "test:e2e": "playwright test --reporter=list, html",
+    "test": "npm run build && npm run test:e2e"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.56.1",
+    "archiver": "^7.0.1"
+  }
+}
